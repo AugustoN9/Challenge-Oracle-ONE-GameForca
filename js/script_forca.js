@@ -291,6 +291,10 @@ function confereLetra(id){
     }
 
     if(tentativas == 0){
+        setTimeout(perdeu, 500);
+    }
+
+    function perdeu(){
         alert('VOCÊ PERDEU!!!');
         cores="black";
     }
