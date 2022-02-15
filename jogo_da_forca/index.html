@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca N9</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="flex-container-1">
+        <h1>Jogo da Forca</h1>
+    </header>
+    <section class="flex-container-2">
+        <div id="palavra" class="flex-container-2-2">
+        </div>
+        <div id="novo"></div>
+    </section>
+    <button id="refresh">Recarregar Jogo</button>
+    <div class="keyboard_wrapper">
+            <div id="tentativas" class="chance"></div>
+
+        <canvas id="forca" width="720px" height="320px" ></canvas>
+
+        <div id="palavrasecreta" class="secreta" style="display: none;"></div>
+
+        <div class="key">    
+            <div id="nova" class="row"></div>
+        </div>
+
+        <div class="key">
+            <div class="row">
+                <span ><button id="tecla_q" class="tecla" value="Q" onclick="" style="display:inline" >Q</button></span>
+                <span ><button id="tecla_w" class="tecla" value="W" onclick="" style="display:inline" >W</button></span>
+                <span ><button id="tecla_e" class="tecla" value="E" onclick="" style="display:inline" >E</button></span>
+                <span ><button id="tecla_r" class="tecla" value="R" onclick="" style="display:inline" >R</button></span>
+                <span ><button id="tecla_t" class="tecla" value="T" onclick="" style="display:inline" >T</button></span>
+                <span ><button id="tecla_y" class="tecla" value="Y" onclick="" style="display:inline" >Y</button></span>
+                <span ><button id="tecla_u" class="tecla" value="U" onclick="" style="display:inline" >U</button></span>
+                <span ><button id="tecla_i" class="tecla" value="I" onclick="" style="display:inline" >I</button></span>
+                <span ><button id="tecla_o" class="tecla" value="O" onclick="" style="display:inline" >O</button></span>
+                <span ><button id="tecla_p" class="tecla" value="P" onclick="" style="display:inline" >P</button></span>
+            </div>
+            <div class="row">
+                <span ><button id="tecla_a" class="tecla" value="A" onclick="" style="display:inline" >A</button></span>
+                <span ><button id="tecla_s" class="tecla" value="S" onclick="" style="display:inline" >S</button></span>
+                <span ><button id="tecla_d" class="tecla" value="D" onclick="" style="display:inline" >D</button></span>
+                <span ><button id="tecla_f" class="tecla" value="F" onclick="" style="display:inline" >F</button></span>
+                <span ><button id="tecla_g" class="tecla" value="G" onclick="" style="display:inline" >G</button></span>
+                <span ><button id="tecla_h" class="tecla" value="H" onclick="" style="display:inline" >H</button></span>
+                <span ><button id="tecla_j" class="tecla" value="J" onclick="" style="display:inline" >J</button></span>
+                <span ><button id="tecla_k" class="tecla" value="K" onclick="" style="display:inline" >K</button></span>
+                <span ><button id="tecla_l" class="tecla" value="L" onclick="" style="display:inline" >L</button></span>
+            </div>
+            <div class="row">
+                <span ><button id="tecla_z" class="tecla" value="Z" onclick="" style="display:inline" >Z</button></span>
+                <span ><button id="tecla_x" class="tecla" value="X" onclick="" style="display:inline" >X</button></span>
+                <span ><button id="tecla_c" class="tecla" value="C" onclick="" style="display:inline" >C</button></span>
+                <span ><button id="tecla_ç" class="tecla" value="Ç" onclick="" style="display:inline" >Ç</button></span>
+                <span ><button id="tecla_v" class="tecla" value="V" onclick="" style="display:inline" >V</button></span>
+                <span ><button id="tecla_b" class="tecla" value="B" onclick="" style="display:inline" >B</button></span>
+                <span ><button id="tecla_n" class="tecla" value="N" onclick="" style="display:inline" >N</button></span>
+                <span ><button id="tecla_m" class="tecla" value="M" onclick="" style="display:inline" >M</button></span>
+            </div>           
+        </div>
+    </div>
+    <footer>
+        <h3>Developer AugustoN9</h3>
+    </footer>
+
+    <section id="letras" class="flex-container-3">   
+    </section>
+    <script src="js/script_forca.js"></script>
+
+</body>
+</html>
