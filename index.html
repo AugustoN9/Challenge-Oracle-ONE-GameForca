@@ -7,21 +7,20 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header class="flex-container-1">
+    <header>
         <h1>Jogo da Forca</h1>
     </header>
-    <section class="flex-container-2">
-        <div id="palavra" class="flex-container-2-2">
-        </div>
-        <div id="novo"></div>
-    </section>
-    <button id="refresh">Recarregar Jogo</button>
-    <div class="keyboard_wrapper">
-            <div id="tentativas" class="chance"></div>
+    
 
-        <canvas id="forca" width="720px" height="320px" ></canvas>
-
+    <div class="display">
+        <div id="tentativas" class="chance"></div>
         <div id="palavrasecreta" class="secreta" style="display: none;"></div>
+        <button id="refresh"><img src="image/reload.png" width="48" height="48" /></button>
+    </div>
+
+    <div class="keyboard_wrapper">
+       
+        <canvas id="forca" width="720px" height="320px" ></canvas>
 
         <div class="key">    
             <div id="nova" class="row"></div>
@@ -63,11 +62,12 @@
             </div>           
         </div>
     </div>
+
     <footer>
         <h3>Developer AugustoN9</h3>
     </footer>
 
-    <section id="letras" class="flex-container-3">   
+    
     </section>
     <script src="js/script_forca.js"></script>
 

@@ -5,7 +5,7 @@
 /* ----- Imagem de fundo responsiva ----- */
 body {
     font-family: 'Consolas', Arial, Helvetica, sans-serif;
-    background-image: url("../image/letrasgame.jpeg");
+    background-image: url("../image/backgroundGameForca.jpg");
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -23,9 +23,30 @@ body {
 
 .keyboard_wrapper {
     margin-left: 40%;
+    margin-right: 10%;
     background: rgba(255, 255, 255, 0.4);
-    width: 840px;
-    padding: 25px;
+    width: 860px;
+    height: auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow:
+        -4px -4px 8px #fff,
+        4px 4px 8px #0002;
+}
+
+canvas{
+    margin-top: -10%;
+}
+
+.display {
+    float: left;
+    display: flex;
+    margin-right: 70%;
+    margin-left: 5%;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    width: 340px;
+    padding: 15px;
     border-radius: 15px;
     box-shadow:
         -4px -4px 8px #fff,
