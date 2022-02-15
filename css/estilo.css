@@ -5,7 +5,7 @@
 /* ----- Imagem de fundo responsiva ----- */
 body {
     font-family: 'Consolas', Arial, Helvetica, sans-serif;
-    background-image: url("../image/backgroundGameForca.jpg");
+    background-image: url("../image/backgroundGameForca3.jpg");
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -22,8 +22,9 @@ body {
 }
 
 .keyboard_wrapper {
-    margin-left: 40%;
-    margin-right: 10%;
+    margin-left: 35%;
+    margin-right: 100em;
+    margin-top: 0%;
     background: rgba(255, 255, 255, 0.4);
     width: 860px;
     height: auto;
@@ -51,6 +52,16 @@ canvas{
     box-shadow:
         -4px -4px 8px #fff,
         4px 4px 8px #0002;
+}
+
+.vidas{    
+    display: inline-block;
+}
+
+button#refresh{
+    width: 60px;
+    background: #4032f6;
+    border-radius: 15px;
 }
 
 .keyboard_wrapper .key {
