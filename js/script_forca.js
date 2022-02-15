@@ -264,8 +264,12 @@ function confereLetra(id){
 
     function vencedor(acertos_v){
         if(acertos_v === caracter.length){
-            alert('PARABENS VOCE VENCEU!!!');
+            setTimeout(parabens, 500);
         }
+    }
+
+    function parabens(){
+        alert('PARABENS VOCE VENCEU!!!');
     }
     
 
