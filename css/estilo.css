@@ -41,13 +41,13 @@ canvas{
 
 .display {
     float: left;
-    display: flex;
+    display: inline-block;
     margin-right: 70%;
     margin-left: 5%;
     margin-top: 10px;
     background: rgba(255, 255, 255, 0.4);
-    width: 340px;
-    padding: 15px;
+    width: 440px;
+    padding: 15px 5px;
     border-radius: 15px;
     box-shadow:
         -4px -4px 8px #fff,
@@ -56,10 +56,12 @@ canvas{
 
 .vidas{    
     display: inline-block;
+    width: 400px;
 }
 
-button#refresh{
+#refresh {
     width: 60px;
+    display: inline-block;
     background: #4032f6;
     border-radius: 15px;
 }
@@ -167,39 +169,6 @@ button#refresh{
 /* ----- Finalizando canvas ----- */
 
 
-
-
-.flex-container-1 {
-    display: flex;
-    justify-content: center;
-}
-
-.flex-container-2 {
-    display: flex;
-    justify-content: center;
-}
-
-.flex-container-2-2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-.flex-container-3 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 40px;
-}
-
-h1 {
-    font-size: 36px;
-    text-transform: uppercase;
-}
-
 p {
     font-size: 20px;
 }
@@ -230,25 +199,4 @@ button {
     font-size: 18px;
     cursor: pointer;
     text-transform: uppercase;
-}
-
-button:hover {
-    background-color: #0682ac;
-}
-
-button.novo-bt {
-    width: auto;
-    padding: 10px;
-}
-
-.certa, .certa:hover {
-    background: #0682ac;
-    border: 1px solid #0682ac;
-    cursor: inherit;
-}
-
-.errada, .errada:hover {
-    background: #DC1F27;
-    border: 1px solid #DC1F27;
-    cursor: inherit;
 }
