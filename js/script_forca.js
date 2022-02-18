@@ -251,6 +251,8 @@ function confereLetra(id){
             let letraDisplay = document.getElementById('letra'+[i+1]);
             letraDisplay.style = "color: white;"
             console.log('acertou esta letra '+caracter_teclado);
+            var mostratentativas = document.getElementById('tentativas');
+            mostratentativas.innerHTML = 'Restam '+tentativas+' tentativas!';
             achou = true;   
             acertos++;
             acertou_quantas_vezes++;
@@ -260,7 +262,7 @@ function confereLetra(id){
     }
     console.log('VOCE ACERTOU '+acertou_quantas_vezes);
     
-    vencedor(    acertou_quantas_vezes);
+    vencedor(acertou_quantas_vezes);
 
     function vencedor(acertos_v){
         if(acertos_v === caracter.length){
@@ -269,9 +271,10 @@ function confereLetra(id){
     }
 
     function parabens(){
-        alert('PARABENS VOCE VENCEU!!!');
+        console.log('PARABENS VOCE VENCEU!!!');
+        var vencedor = document.getElementById('vitoria').style;
+        vencedor.display="block";
     }
-    
 
     console.log('O valor do caracter eh '+caractere)
      
@@ -295,8 +298,10 @@ function confereLetra(id){
     }
 
     function perdeu(){
-        alert('VOCÊ PERDEU!!!');
+        console.log('VOCÊ PERDEU!!!');
         cores="black";
+        var derrota = document.getElementById('derrota').style;
+        derrota.display="block";
     }
 }
 

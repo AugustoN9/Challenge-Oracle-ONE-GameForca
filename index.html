@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Jogo da Forca</h1>
+        <h1 class="titulo">Jogo da Forca</h1>
     </header>
     
 
@@ -28,11 +28,17 @@
         <button id="refresh">
             <img src="image/reload.png" width="45" height="45" />
         </button>
-
+        
     </div>
 
+    <div class="display2">
+        <div id="derrota" style="display: none;"><img src="image/pokémon-pikachu.gif"><p>Que pipoca, não é possivel!</p></div>
+        <div id="vitoria" style="display: none;"><p>Parabens! Voce Venceu! </p><br/><img src="image/happy.gif"></div>
+
+    </div>
+    
     <div class="keyboard_wrapper">
-       
+        
         <canvas id="forca" width="720px" height="320px" ></canvas>
 
         <div class="key">    

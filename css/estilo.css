@@ -21,6 +21,13 @@ body {
     box-sizing: border-box;
 }
 
+.titulo {
+    color: #FFFFFF;
+    font-size: 50px;
+    background-color: rgba(153, 51, 153, 0.8);
+    padding-left: 70px;
+}
+
 .keyboard_wrapper {
     margin-left: 35%;
     margin-right: 100em;
@@ -54,6 +61,21 @@ canvas{
         4px 4px 8px #0002;
 }
 
+.display2 {
+    float: right;
+    position:absolute;
+    margin-right: 5%;
+    margin-left: 55%;
+    margin-top: 5%;
+    width: 340px;
+    height: 300px;
+}
+
+.display2 p{
+    font-size: 30px;
+    color:chartreuse;
+}
+
 .vidas{    
     display: inline-block;
     width: 400px;
@@ -64,6 +86,16 @@ canvas{
     display: inline-block;
     background: #4032f6;
     border-radius: 15px;
+}
+
+.derrota img, p{
+    display:flex;
+    float: right;
+    position:fixed;
+    width: 640px;
+    margin-right: -100px;
+    z-index: 99;
+    
 }
 
 .keyboard_wrapper .key {
